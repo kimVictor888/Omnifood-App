@@ -9,13 +9,14 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     background-color: #ffffff;
     color: #555555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {
@@ -453,7 +454,7 @@ cite img {
 
 
 /*--------------------------------------------------*/
-/* SIGN UP */
+/* CONTACT-FORM */
 /*--------------------------------------------------*/
 
 .contact-form {
