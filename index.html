@@ -5,7 +5,8 @@
     <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
           name='viewport'>
     <meta content='ie=edge' http-equiv='X-UA-Compatible'>
-    <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
+    <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js' type='module'></script>
+    <script nomodule='' src='https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js'></script>
     <link href='vendors/css/normalize.css' rel='stylesheet'>
     <link href='vendors/css/grid.css' rel='stylesheet'>
     <link href='resources/css/style.css' rel='stylesheet'>
@@ -19,6 +20,7 @@
     <nav>
         <div class='row'>
             <img alt='Omnifood logo' class='logo' src='resources/img/logo-white.png'>
+            <img alt='Omnifood logo' class='logo-black' src='resources/img/logo.png'>
             <ul class='main-nav'>
                 <li><a href='#'>Food delivery</a></li>
                 <li><a href='#'>How it works</a></li>
@@ -35,7 +37,7 @@
     </div>
 </header>
 
-<section class='section-features'>
+<section class='section-features js--section-features'>
     <div class='row'>
         <h2>Get food fast &mdash; not fast food</h2>
         <p class='long-copy'>Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy.
@@ -459,6 +461,8 @@
         <p>Copyright &copy; 2015 by Omnifood. All right reserved.</p>
     </div>
 </footer>
-
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='vendors/js/jquery.waypoints.min.js'></script>
+<script src='resources/js/app.js'></script>
 </body>
 </html>
