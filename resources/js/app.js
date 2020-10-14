@@ -55,4 +55,16 @@ $(() => {
     }, {
         offset: '50%'
     });
+
+    // Mobile navigation
+    $('.js--nav-icon').on('click', () => {
+        const nav = $('.js--main-nav');
+        const icon = $('.js--nav-icon ion-icon');
+        nav.slideToggle(200);
+        if (icon.attr('name') === 'menu-outline') {
+            icon.attr('name', 'close-outline');
+        } else {
+            icon.attr('name', 'menu-outline');
+        }
+    });
 });

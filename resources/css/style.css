@@ -205,12 +205,14 @@ header {
 }
 
 .logo {
+    float: left;
     height: 100px;
     width: auto;
     margin-top: 20px;
 }
 
 .logo-black {
+    float: left;
     display: none;
     height: 50px;
     width: auto;
@@ -246,6 +248,20 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* MOBILE NAV */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #ffffff;
+}
+
 /* STICKY NAV */
 
 .sticky {
@@ -253,7 +269,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ffffff;
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
